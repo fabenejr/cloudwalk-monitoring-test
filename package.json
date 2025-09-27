@@ -1,0 +1,35 @@
+{
+	"name": "cloudwalk-monitoring-system",
+	"version": "1.0.0",
+	"description": "Real-time transaction monitoring system for CloudWalk",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js",
+		"analyze": "node analysis/dataAnalysis.js",
+		"test": "node tests/api-tester.js",
+		"health": "curl http://localhost:3000/health"
+	},
+	"dependencies": {
+		"axios": "^1.4.0",
+		"csv-parser": "^3.0.0",
+		"express": "^4.18.2",
+		"node-cron": "^3.0.2",
+			"readable-stream": "^3.6.2",
+		"sqlite3": "^5.1.6",
+		"ws": "^8.13.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	},
+	"keywords": [
+		"monitoring",
+		"transactions",
+		"anomaly-detection",
+		"real-time",
+		"alerts"
+	],
+	"author": "CloudWalk Monitoring Analyst",
+	"license": "MIT"
+}
+
