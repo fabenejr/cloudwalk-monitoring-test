@@ -1,92 +1,89 @@
-# CloudWalk Monitoring System
-
-## 📁 Estrutura Organizada do Projeto
-
-```
 cloudwalk-monitoring-test/
-├── server.js                    # ⭐ Servidor principal (USE ESTE)
-├── package.json                 # Configuração do projeto
-├── data/                        # 📊 Dados CSV
+├── server.js                    # ⭐ Main server (USE THIS ONE)
+├── package.json                 # Project configuration
+├── data/                        # 📊 CSV Data
 │   ├── transactions.csv
 │   ├── transactions_auth_codes.csv
 │   ├── checkout_1.csv
 │   └── checkout_2.csv
-├── public/                      # 🌐 Dashboard web
+├── public/                      # 🌐 Web Dashboard
 │   └── index.html
-├── analysis/                    # 📈 Análise de dados
+├── analysis/                    # 📈 Data Analysis
 │   └── dataAnalysis.js
-├── tests/                       # 🧪 Testes
+├── tests/                       # 🧪 Tests
 │   ├── api-tester.js
 │   ├── quickTest.js
 │   └── simpleTest.js
-├── docs/                        # 📚 Documentação
+├── docs/                        # 📚 Documentation
 │   ├── README.md
 │   └── EXECUTION_SUMMARY.md
-└── node_modules/               # Dependências
-```
+└── node_modules/               # Dependencies
+🚀 How to Run
+Method 1: NPM Script (Recommended)
+Bash
 
-## 🚀 Como Executar
-
-### Método 1: Script NPM (Recomendado)
-```bash
 npm start
-```
+Method 2: Direct Node
+Bash
 
-### Método 2: Node direto
-```bash
 node server.js
-```
+Method 3: Startup Script
+Bash
 
-### Método 3: Script de inicialização
-```bash
 # Windows
 start.bat
 
 # Linux/Mac
 ./start.sh
-```
+🧪 How to Test
+Bash
 
-## 🧪 Como Testar
-
-```bash
-# Testar API
+# Test API
 npm test
 
-# Verificar saúde do servidor
+# Check server health
 npm run health
 
-# Executar análise de dados
+# Run data analysis
 npm run analyze
-```
+🌐 Access
+Dashboard: http://localhost:3000
 
-## 🌐 Acessos
+Health Check: http://localhost:3000/health
 
-- **Dashboard**: http://localhost:3000
-- **Health Check**: http://localhost:3000/health
-- **API Stats**: http://localhost:3000/api/stats
-- **WebSocket**: ws://localhost:8080
+API Stats: http://localhost:3000/api/stats
 
-## 📊 APIs Disponíveis
+WebSocket: ws://localhost:8080
 
-- `GET /health` - Status do servidor
-- `GET /api/stats` - Estatísticas de transações
-- `GET /api/alerts` - Alertas recentes
-- `GET /api/checkout-analysis` - Análise de checkout
-- `GET /api/timeseries` - Dados temporais
-- `POST /api/transaction` - Enviar transação
+📊 Available APIs
+GET /health - Server status
 
-## ✅ Problemas Resolvidos
+GET /api/stats - Transaction statistics
 
-1. **✅ Servidor estável** - Sem encerramento prematuro
-2. **✅ Dados organizados** - CSVs na pasta `data/`
-3. **✅ Testes organizados** - Scripts na pasta `tests/`
-4. **✅ Documentação centralizada** - Tudo na pasta `docs/`
-5. **✅ Duplicatas removidas** - Apenas arquivos essenciais
-6. **✅ Error handling robusto** - Sistema não crasha
-7. **✅ Dashboard funcional** - Com dados em tempo real
+GET /api/alerts - Recent alerts
 
-## 🎯 Status Atual
+GET /api/checkout-analysis - Checkout analysis
 
-**SISTEMA 100% OPERACIONAL** 🎉
+GET /api/timeseries - Time series data
 
-O projeto está organizado, limpo e funcionando perfeitamente!
+POST /api/transaction - Submit transaction
+
+✅ Solved Issues
+✅ Stable server - No premature termination
+
+✅ Organized data - CSVs in the data/ folder
+
+✅ Organized tests - Scripts in the tests/ folder
+
+✅ Centralized documentation - Everything in the docs/ folder
+
+✅ Duplicates removed - Only essential files
+
+✅ Robust error handling - System does not crash
+
+✅ Functional dashboard - With real-time data
+
+🎯 Current Status
+SYSTEM 100% OPERATIONAL 🎉
+
+The project is organized, clean, and working perfectly!
