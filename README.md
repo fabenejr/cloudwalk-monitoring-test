@@ -47,7 +47,7 @@ start.bat
 ./start.sh
 ```
 
-## 🧪 Hos to Test
+## 🧪 How to Test
 
 ```bash
 # Test API
