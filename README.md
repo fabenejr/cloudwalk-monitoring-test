@@ -1,3 +1,8 @@
+# CloudWalk Monitoring System
+
+## 📁 Organized Project Structure
+
+```
 cloudwalk-monitoring-test/
 ├── server.js                    # ⭐ Main server (USE THIS ONE)
 ├── package.json                 # Project configuration
@@ -17,27 +22,34 @@ cloudwalk-monitoring-test/
 ├── docs/                        # 📚 Documentation
 │   ├── README.md
 │   └── EXECUTION_SUMMARY.md
-└── node_modules/               # Dependencies
-🚀 How to Run
-Method 1: NPM Script (Recommended)
-Bash
+└── node_modules/                # Dependencies
+```
 
+## 🚀 How to Run
+
+###Method 1: NPM Script (Recommended)
+```bash
 npm start
-Method 2: Direct Node
-Bash
+```
 
+### Method 2: Direct Node
+```bash
 node server.js
-Method 3: Startup Script
-Bash
+```
 
+### Method 3: Startup Script
+
+```bash
 # Windows
 start.bat
 
 # Linux/Mac
 ./start.sh
-🧪 How to Test
-Bash
+```
 
+## 🧪 Hos to Test
+
+```bash
 # Test API
 npm test
 
@@ -46,44 +58,20 @@ npm run health
 
 # Run data analysis
 npm run analyze
-🌐 Access
-Dashboard: http://localhost:3000
+```
 
-Health Check: http://localhost:3000/health
+## 🌐 Access
 
-API Stats: http://localhost:3000/api/stats
+- **Dashboard**: http://localhost:3000
+- **Health Check**: http://localhost:3000/health
+- **API Stats**: http://localhost:3000/api/stats
+- **WebSocket**: ws://localhost:8080
 
-WebSocket: ws://localhost:8080
+## 📊 Available APIs
 
-📊 Available APIs
-GET /health - Server status
-
-GET /api/stats - Transaction statistics
-
-GET /api/alerts - Recent alerts
-
-GET /api/checkout-analysis - Checkout analysis
-
-GET /api/timeseries - Time series data
-
-POST /api/transaction - Submit transaction
-
-✅ Solved Issues
-✅ Stable server - No premature termination
-
-✅ Organized data - CSVs in the data/ folder
-
-✅ Organized tests - Scripts in the tests/ folder
-
-✅ Centralized documentation - Everything in the docs/ folder
-
-✅ Duplicates removed - Only essential files
-
-✅ Robust error handling - System does not crash
-
-✅ Functional dashboard - With real-time data
-
-🎯 Current Status
-SYSTEM 100% OPERATIONAL 🎉
-
-The project is organized, clean, and working perfectly!
+- `GET /health` - Server status
+- `GET /api/stats` -  Transaction statistics
+- `GET /api/alerts` - Recent alerts
+- `GET /api/checkout-analysis` - Checkout analysis
+- `GET /api/timeseries` - Time series data
+- `POST /api/transaction` - Submit transaction
